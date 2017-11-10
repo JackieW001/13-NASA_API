@@ -4,6 +4,7 @@ import json
 
 app = Flask(__name__)
 
+# google maps api key AIzaSyDuEPbNheH4vFOMikIk4jFsD5g75UDzdzY
 @app.route("/")
 def root():
     apod = urllib2.urlopen('https://api.nasa.gov/planetary/apod?api_key=1HbGn9RGplzF9EfsWk4vPWh6T24qOzYFbSbDu0Gi')
