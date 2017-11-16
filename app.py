@@ -4,10 +4,9 @@ import json
 
 app = Flask(__name__)
 
-# google maps api key AIzaSyDuEPbNheH4vFOMikIk4jFsD5g75UDzdzY
 @app.route("/")
 def root():
-    gurl= "https://www.google.com/maps/embed/v1/search?key=AIzaSyDuEPbNheH4vFOMikIk4jFsD5g75UDzdzY&q=Stuyvesant+High+School,New+York,NY"
+    gurl= "https://www.google.com/maps/embed/v1/search?key={...}&q=Stuyvesant+High+School,New+York,NY"
     return render_template('gmap.html',url=gurl)
 
 '''
